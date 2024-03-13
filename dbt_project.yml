@@ -25,19 +25,6 @@ vars:
     ad_reporting__google_ads_enabled: True
     ad_reporting__facebook_ads_enabled: True
     ad_reporting__pinterest_ads_enabled: False
-    # Normalização do nome dos clientes. Account ID de Google, Face e Pinterest
-    cliente_mapeamento:
-      JFL: ['549764254559', '3471881668', '316460303462958']
-      Sicoob: ['5163940823715458', '7524637432', '876026773731272']
-      Escolaweb: ['1053958871390291']
-  ad_reporting:
-    ad_reporting__account_passthrough_metrics: []
-    ad_reporting__campaign_passthrough_metrics: []
-    ad_reporting__ad_group_passthrough_metrics: []
-    ad_reporting__ad_passthrough_metrics: []
-    ad_reporting__keyword_passthrough_metrics: []
-    ad_reporting__search_passthrough_metrics: []
-    "dbt_date:time_zone": "America/Los_Angeles"
 
 models:
   ad_reporting:
