@@ -6,6 +6,30 @@ config-version: 2
 require-dbt-version: [">=1.6.0", "<2.0.0"]
 
 vars:
+    facebook_ads_schema: facebook_ads
+    facebook_ads_database: marketingtegrus
+    google_ads_schema: google_ads
+    google_ads_database: marketingtegrus
+    #pinterest_schema: pinterest_ads
+    #pinterest_database: marketingtegrus
+
+    ad_reporting__amazon_ads_enabled: False
+    ad_reporting__apple_search_ads_enabled: False
+    ad_reporting__microsoft_ads_enabled: False
+    ad_reporting__linkedin_ads_enabled: False
+    ad_reporting__twitter_ads_enabled: False
+    ad_reporting__snapchat_ads_enabled: False
+    ad_reporting__tiktok_ads_enabled: False
+    ad_reporting__reddit_ads_enabled: False
+    # Mantenha o Google, Facebook e Pinteres como True, pois você está usando-os:
+    ad_reporting__google_ads_enabled: True
+    ad_reporting__facebook_ads_enabled: True
+    ad_reporting__pinterest_ads_enabled: False
+    # Normalização do nome dos clientes. Account ID de Google, Face e Pinterest
+    cliente_mapeamento:
+      JFL: ['549764254559', '3471881668', '316460303462958']
+      Sicoob: ['5163940823715458', '7524637432', '876026773731272']
+      Escolaweb: ['1053958871390291']
   ad_reporting:
     ad_reporting__account_passthrough_metrics: []
     ad_reporting__campaign_passthrough_metrics: []
